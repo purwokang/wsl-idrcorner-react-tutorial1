@@ -6,13 +6,11 @@ class App extends Component {
     return (
       <div>
         <h1>Hallo Aplikasi React Perdanaku</h1>
-        <Produk />
+        <Produk namaProduk='LCD' harga='1200000' stok='5' />
         <br />
-        <Produk />
+        <Produk namaProduk='Keyboard' harga='130000' stok='200' />
         <br />
-        <Produk />
-        <br />
-        <Produk />
+        <Produk namaProduk='Mic' harga='300000' stok='20' />
         <br />
       </div>
     )
