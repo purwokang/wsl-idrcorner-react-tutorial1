@@ -14,5 +14,7 @@ code {
 
 .kotak {
   padding: 30px;
-  background: greenyellow;
+  background: whitesmoke;
+  margin-bottom: 30px;
+  color: #4267b2;
 }
