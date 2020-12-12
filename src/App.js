@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Produk from './Produk'
+import Style from './Style.module.css'
 
 class App extends Component {
 
@@ -24,6 +25,9 @@ class App extends Component {
     return (
       <div>
         <h1 style={heading1}>Hallo Aplikasi React Pertamax</h1>
+
+        <p className={Style.judul}>Daftar Produk</p>
+
         <Produk produkProduk={this.state.produk} />
       </div>
     )
