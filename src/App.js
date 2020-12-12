@@ -16,9 +16,14 @@ class App extends Component {
   }
 
   render() {
+
+    const heading1 = {
+      color: 'red'
+    }
+
     return (
       <div>
-        <h1>Hallo Aplikasi React Pertamax</h1>
+        <h1 style={heading1}>Hallo Aplikasi React Pertamax</h1>
         <Produk produkProduk={this.state.produk} />
       </div>
     )
