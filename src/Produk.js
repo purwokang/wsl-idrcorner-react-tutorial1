@@ -9,13 +9,21 @@ const Produk = ({ produkProduk }) => {
     // bekerja dengan react akan banyak menggunakan kombinasi dari container component dan ui (fungsioinal) component
 
     const listProduk = produkProduk.map(produk => {
-        return (
-            <div className='kotak' key={produk.id} >
-                <p>Nama Produk: {produk.namaProduk}</p>
-                <p>Harga: {produk.harga}</p>
-                <p>Stok: {produk.stok}</p>
-            </div>
-        )
+
+        if (produk.stok > 30) {
+            return (
+                <div className="card kotak">
+                    <div className='card-body' key={produk.id} >
+                        <h5 className='card-title' >Nama Produk: {produk.namaProduk}</h5>
+                        <p>Harga: {produk.harga}</p>
+                        <p>Stok: {produk.stok}</p>
+                    </div>
+                </div>
+            )
+        } else {
+            return null;
+        }
+
     })
 
     return (

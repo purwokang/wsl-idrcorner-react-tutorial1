@@ -12,9 +12,14 @@ code {
     monospace;
 } */
 
+body {
+  background: whitesmoke;
+  padding: 30px;
+}
+
 .kotak {
   padding: 30px;
-  background: whitesmoke;
+  background: white;
   margin-bottom: 30px;
   color: #4267b2;
 }
