@@ -1,21 +1,23 @@
-import React from 'react'; // cukup import React
+import React from 'react';
 
 const Produk = ({ produkProduk }) => {
 
+
     const listProduk = produkProduk.map(produk => {
 
-        const list = produk.stok > 30 ? (
+        let minstok = produk.stok <= 30 ? ('minstok') : (null)
+
+        return (
             <div className="card kotak">
-                <div className='card-body' key={produk.id} >
+                <div className={minstok + ' card-body'} key={produk.id} >
                     <h5 className='card-title' >Nama Produk: {produk.namaProduk}</h5>
                     <p>Harga: {produk.harga}</p>
                     <p>Stok: {produk.stok}</p>
                 </div>
             </div>
-        ) : (
-                null
-            )
-        return list
+        )
+
+
     })
 
     return (
